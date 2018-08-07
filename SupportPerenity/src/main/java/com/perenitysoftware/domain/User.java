@@ -33,7 +33,7 @@ private String email;
 @Column(name ="enabled")
 private int enabled;
 
-@OneToMany(fetch=FetchType.EAGER)
+@ManyToMany(fetch=FetchType.EAGER)
 private Collection<UserRole> roles=new ArrayList<>();
 
 }
